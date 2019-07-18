@@ -223,6 +223,9 @@ class Theme(object):
         if not self._widget:
             self._widget = widget
 
+        if self._widget.get("theme.exclude", "") == name:
+            return None
+
         if self._widget != widget:
             self._prevbg = self.bg(self._widget)
             self._widget = widget
@@ -238,7 +241,8 @@ class Theme(object):
         states = widget.state()
         if name not in states:
             for state in states:
-                state_themes.append(self._get(widget, state, {}))
+                if state:
+                    state_themes.append(self._get(widget, state, {}))
 
         value = self._defaults.get(name, default)
         value = widget.get("theme.{}".format(name), value)

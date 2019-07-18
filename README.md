@@ -5,7 +5,7 @@
 [![Test Coverage](https://codeclimate.com/github/tobi-wan-kenobi/bumblebee-status/badges/coverage.svg)](https://codeclimate.com/github/tobi-wan-kenobi/bumblebee-status/coverage)
 [![Issue Count](https://codeclimate.com/github/tobi-wan-kenobi/bumblebee-status/badges/issue_count.svg)](https://codeclimate.com/github/tobi-wan-kenobi/bumblebee-status)
 
-**Many, many thanks to all contributors! As of now, 38 of the modules are from various contributors (!), and only 18 from myself.**
+**Many, many thanks to all contributors! As of now, 42 of the modules are from various contributors (!), and only 19 from myself.**
 
 ![Solarized Powerline](https://github.com/tobi-wan-kenobi/bumblebee-status/blob/master/screenshots/themes/powerline-solarized.png)
 
@@ -37,6 +37,10 @@ Explicitly unsupported Python versions: 3.2 (missing unicode literals)
 
 # Arch Linux
 $ sudo pacman -S awesome-terminal-fonts
+
+# FreeBSD
+$ sudo pkg install font-awesome
+$ sudo pkg install py36-tzlocal py36-pytz py36-netifaces py36-psutil py36-requests #for dependencies
 
 # Other
 # see https://github.com/gabrielelana/awesome-terminal-fonts
@@ -186,6 +190,8 @@ Modules and commandline utilities are only required for modules, the core itself
 * i3ipc (for the module 'title')
 * pacman-contrib (for module 'arch-update')
 * docker (for the module 'docker_ps')
+* pytz (for the module 'datetimetz')
+* localtz (for the module 'datetimetz')
 
 # Required commandline utilities
 

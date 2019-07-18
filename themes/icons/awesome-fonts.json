@@ -6,6 +6,9 @@
 	"date": { "prefix": ""	},
 	"time": { "prefix": "" },
 	"datetime": { "prefix": "" },
+	"datetz": { "prefix": ""	},
+	"timetz": { "prefix": "" },
+	"datetimetz": { "prefix": "" },
 	"memory": { "prefix": "" },
 	"cpu": { "prefix": "" },
 	"disk": { "prefix": "" },
@@ -145,6 +148,10 @@
 	    "rx": { "prefix": "" },
 	    "tx": { "prefix": "" }
     },
+    "network_traffic": {
+	    "rx": { "prefix": "" },
+            "tx": { "prefix": "" }
+    },
     "mpd": {
 		"playing": { "prefix": "" },
 		"paused": { "prefix": "" },
@@ -192,5 +199,12 @@
     "dunst": {
         "muted": { "prefix": ""},
         "unmuted": { "prefix": "" }
+    },
+    "pihole": { 
+      "enabled": { "prefix": "" },
+      "disabled": { "prefix": "" }
+    },
+    "vpn": {
+        "prefix": ""
     }
 }
